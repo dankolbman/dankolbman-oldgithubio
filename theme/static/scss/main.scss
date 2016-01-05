@@ -1,0 +1,64 @@
+@import "uikit-mixins.scss";
+@import "uikit.scss";
+
+#banner h1, #banner h3 {
+  margin: 0;
+}
+
+#banner img {
+  max-width: 200px;
+  max-height: 200px;
+}
+
+a:hover, .uk-contrast a:hover:not([class]) {
+  text-decoration: none;
+}
+
+.header {
+  background: #222 url("/theme/images/header.jpg") center;
+  background-size: cover;
+  padding-top: 50px;
+  height: 250px;
+}
+
+.post-header{
+  background: #222 center;
+  background-size: cover;
+  padding-top: 50px;
+  height: 250px;
+}
+
+.post-no-header {
+  background: $base-link-color center;
+  background-size: cover;
+  padding-top: 50px;
+  height: 124px;
+}
+
+.post-header header {
+  background: rgba(0,0,0,0.8);
+  padding: 5px;
+}
+
+.post-no-header header {
+  background: rgba(0,0,0,0.3);
+  padding: 5px;
+}
+
+p {
+  font:18px/24px $base-body-font-family;
+  text-align: justify;
+}
+
+p img {
+  position: relative;
+}
+
+.entry-content h1, .entry-content h2 {
+  @extend .uk-text-center;
+  text-transform: capitalize;
+}
+
+.uk-article {
+  max-width: 640px;
+}

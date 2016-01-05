@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="{{ DEFAULT_LANG }}">
+<head>
+  {% block head %}
+  <title>{% block title %}{{ SITENAME }}{% endblock title %}</title>
+  <link href="/theme/css/main.css" rel="stylesheet"></link>
+  <link href="/theme/css/pygments-tango.css" rel="stylesheet"></link>
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <meta charset="utf-8" />
+  {% endblock head %}
+</head>
+
+<body id="index" class="home">
+  <header id="banner" class="body">
+    <div class="uk-cover-background header uk-contrast">
+      <div class="uk-grid uk-width-large-1-2 uk-width-medium-1-1 uk-container-center">
+        <img src="/theme/images/dan.jpg" class="uk-border-circle uk-thumbnail uk-hidden-large uk-align-center" width="150px"></img>
+        <img src="/theme/images/dan.jpg" class="uk-width-large-1-3 uk-border-circle uk-thumbnail uk-float-left uk-visible-large" width="150px"></img>
+        <div class="uk-width-large-2-3 uk-width-medium-1-1">
+          <h1><a href="{{ SITEURL }}/">{{ SITENAME }}</a></h1>
+          <h3>{{ SITESUBTITLE }}</h3>
+        </div>
+      </div>
+    </div>
+  </header><!-- /#banner -->
+  <nav class="uk-navbar">
+    <div class="uk-navbar-center uk-navbar-content">
+    <ul class="uk-navbar-nav">
+      {% if GITHUBURL %}
+      <li><a href="{{ GITHUBURL }}">Github <i class="uk-icon-github"></i></a></li>
+      {% endif %}
+      {% if TWITTERURL %}
+      <li><a href="{{ TWITTERURL }}">Twitter <i class="uk-icon-twitter"></i></a></li>
+      {% endif %}
+      {% if TRACKERURL %}
+      <li><a href="{{ TRACKERURL }}">Travel <i class="uk-icon-globe"></i></a></li>
+      {% endif %}
+    </ul>
+    </div>
+  </nav><!-- /#menu -->
+  {% block content %}
+  {% endblock %}
+  <footer id="contentinfo" class="uk-block uk-block-secondary">
+    <address id="about" class="uk-width-3-5 uk-container-center">
+    Dan Kolbman 2015
+    </address><!-- /#about -->
+  </footer><!-- /#contentinfo -->
+</body>
+</html>
