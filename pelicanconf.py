@@ -22,7 +22,7 @@ ARTICLE_PATHS = ['posts']
 ARTICLE_SAVE_AS = '{slug}/post.html'
 ARTICLE_URL = '{slug}/post.html'
 
-TIMEZONE = 'Asia/Bangkok'
+TIMEZONE = 'America/New_York'
 
 DEFAULT_LANG = 'en'
 
