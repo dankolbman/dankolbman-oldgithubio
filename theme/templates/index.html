@@ -4,6 +4,7 @@
 {% block content_title %}
 {% endblock %}
 
+
 {% for article in articles_page.object_list %}
 
   {% if article.image %}
@@ -23,8 +24,9 @@
   </article>
 {% endfor %}
 <!-- /#posts-list -->
-<div class="uk-width-1-2 uk-container-center">
-{% include 'pagination.html' %}
+<hr class="uk-article-divider"></div>
+<div class="uk-width-1-6 uk-container-center">
+  {% include 'pagination.html' %}
 </div>
 </section><!-- /#content -->
 {% endblock content %}
