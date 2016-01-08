@@ -62,3 +62,17 @@ p img {
 .uk-article {
   max-width: 640px;
 }
+
+/* For notebooks */
+.prompt {
+  display: none;
+}
+
+.output_png.output_subarea, .output_html.output_subarea {
+  max-width: none;
+}
+
+table {
+  @extend .uk-table;
+  @extend .uk-table-hover;
+}
