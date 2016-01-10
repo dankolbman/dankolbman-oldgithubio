@@ -28,7 +28,8 @@ STATIC_PATHS = ['posts', 'extra/favicon.ico']
 ARTICLE_PATHS = ['posts']
 
 EXTRA_PATH_METADATA = {
-    'extra/favicon.ico': {'path': 'favicon.ico'}
+    'extra/favicon.ico': {'path': 'favicon.ico'},
+    'extra/README.md' : {'path': 'README.md'}
 }
 
 ARTICLE_SAVE_AS = 'articles/{slug}/index.html'
