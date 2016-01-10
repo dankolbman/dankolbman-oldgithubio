@@ -7,6 +7,11 @@ SITENAME = 'Dan Kolbman'
 SITESUBTITLE = ''
 SITEURL = ''
 
+MARKUP = ('md', 'ipynb')
+
+PLUGIN_PATH = 'plugins'
+PLUGINS = ['ipynb']
+
 MD_EXTENSIONS = ['codehilite', 'extra']
 
 GITHUBURL = 'https://github.com/dankolbman'
@@ -16,20 +21,26 @@ TRACKERURL = 'http://dankolbman.com'
 PATH = 'content'
 THEME = 'theme'
 
-STATIC_PATHS = ['posts']
+# I'm storing each post and it's images inside a subfolder inside posts
+# so I'd like to both create pages from the posts as well as preserve the other
+# files and their paths in the post's directory
+STATIC_PATHS = ['posts', 'extra/favicon.ico']
 ARTICLE_PATHS = ['posts']
 
-ARTICLE_SAVE_AS = '{slug}/post.html'
-ARTICLE_URL = '{slug}/post.html'
+EXTRA_PATH_METADATA = {
+    'extra/favicon.ico': {'path': 'favicon.ico'}
+}
+
+ARTICLE_SAVE_AS = 'articles/{slug}/index.html'
+ARTICLE_URL = 'articles/{slug}/index.html'
 
 TIMEZONE = 'America/New_York'
 
 DEFAULT_LANG = 'en'
 
-MENUITEMS = (('About', '#'),
-             ('Contact', '#'),)
+DEFAULT_PAGINATION = 1
 
-DEFAULT_PAGINATION = 5
+USE_FOLDER_AS_CATEGORY = False
 
 DISPLAY_CATEGORIES_ON_MENU = False
 DISPLAY_PAGES_ON_MENU = False
