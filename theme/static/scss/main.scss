@@ -14,6 +14,20 @@ a:hover, .uk-contrast a:hover:not([class]) {
   text-decoration: none;
 }
 
+/* For centering the nav */
+.uk-navbar-center {
+  max-width: 100%;
+}
+
+.uk-navbar-nav > li{
+  float: none;
+  display: inline;
+}
+
+.uk-navbar-nav > li > a {
+  display: inline-block;
+}
+
 .uk-article-title a {
   display: block;
   width: 100%;
