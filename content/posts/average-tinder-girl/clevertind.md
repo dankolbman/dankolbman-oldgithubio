@@ -2,6 +2,7 @@ title: Picturing the Average Tinder Girl
 slug: average-tinder-girl
 author: Dan Kolbman
 date: 2015-1-8
+color: ED72C2
 
 In this article, I'm going to discuss the steps I took to get an image of the 
 average Tinder girl. If you're also interested in a general analysis of the 
