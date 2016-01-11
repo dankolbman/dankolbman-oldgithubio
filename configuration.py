@@ -5,6 +5,12 @@ from __future__ import unicode_literals
 AUTHOR = 'Dan Kolbman'
 SITENAME = 'Dan Kolbman'
 SITESUBTITLE = ''
+SITEBLURB = '''Hey! I'm Dan Kolbman. I studied Physics at the Rochester Institute
+            of Technology. While there, I created a
+            <a href="https://github.com/dankolbman/BCIM">dynamics simulation</a>
+            using high performance computing to model
+            <a href=http://google.com>cancer cell mechanics</a>
+            '''
 SITEURL = ''
 
 MARKUP = ('md', 'ipynb')
@@ -39,12 +45,10 @@ TIMEZONE = 'America/New_York'
 
 DEFAULT_LANG = 'en'
 
-DEFAULT_PAGINATION = 1
+DEFAULT_PAGINATION = 6
 
 USE_FOLDER_AS_CATEGORY = False
 
-DISPLAY_CATEGORIES_ON_MENU = False
-DISPLAY_PAGES_ON_MENU = False
 
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
