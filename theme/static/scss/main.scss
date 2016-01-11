@@ -19,6 +19,14 @@ a:hover, .uk-contrast a:hover:not([class]) {
   width: 100%;
 }
 
+h1, h2, h3 {
+  font-family: 'Lato', "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.uk-navbar li a {
+  font-family: 'Lato', "Helvetica Neue", Helvetica, sans-serif;
+}
+
 .header {
   background: #222 url("/theme/images/header.jpg") center;
   background-size: cover;
@@ -38,7 +46,8 @@ a:hover, .uk-contrast a:hover:not([class]) {
   background: $base-link-color center;
   background-size: cover;
   padding-top: 8px;
-  height: 60px;
+  padding-bottom: 8px;
+  margin-bottom: 5px;
 }
 
 .post-header header {
@@ -52,12 +61,14 @@ a:hover, .uk-contrast a:hover:not([class]) {
 }
 
 p {
-  font:18px/24px $base-body-font-family;
+  /* font:18px/24px $base-body-font-family; */
   text-align: justify;
 }
 
 p img {
-  position: relative;
+  display: block;
+  margin-bottom: 15px;
+  @extend .uk-align-center
 }
 
 .entry-content h1, .entry-content h2 {
