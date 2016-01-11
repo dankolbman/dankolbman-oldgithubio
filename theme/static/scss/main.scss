@@ -14,11 +14,17 @@ a:hover, .uk-contrast a:hover:not([class]) {
   text-decoration: none;
 }
 
+.uk-article-title a {
+  display: block;
+  width: 100%;
+}
+
 .header {
   background: #222 url("/theme/images/header.jpg") center;
   background-size: cover;
-  padding-top: 50px;
-  height: 250px;
+  padding-top: 20px;
+  padding-bottom: 15px;
+  min-height: 250px;
 }
 
 .post-header{
@@ -31,8 +37,8 @@ a:hover, .uk-contrast a:hover:not([class]) {
 .post-no-header {
   background: $base-link-color center;
   background-size: cover;
-  padding-top: 50px;
-  height: 124px;
+  padding-top: 8px;
+  height: 60px;
 }
 
 .post-header header {

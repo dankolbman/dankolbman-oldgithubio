@@ -15,12 +15,16 @@
 <body id="index" class="home">
   <header id="banner" class="body">
     <div class="uk-cover-background header uk-contrast">
-      <div class="uk-grid uk-width-large-1-2 uk-width-medium-1-1 uk-container-center">
-        <img src="/theme/images/dan.jpg" class="uk-border-circle uk-thumbnail uk-hidden-large uk-align-center" width="150px"></img>
-        <img src="/theme/images/dan.jpg" class="uk-width-large-1-3 uk-border-circle uk-thumbnail uk-float-left uk-visible-large" width="150px"></img>
-        <div class="uk-width-large-2-3 uk-width-medium-1-1">
-          <h1><a href="{{ SITEURL }}/">{{ SITENAME }}</a></h1>
+      <div class="uk-grid-collapse uk-width-1-1 uk-container-center">
+        <img src="/theme/images/dan.jpg" class="uk-border-circle uk-thumbnail uk-align-center" width="150px"></img>
+
+        <div class="uk-width-1-1">
+          <div class="uk-width-large-1-2 uk-width-medium-2-3 uk-width-small-4-5 uk-width-9-10 uk-align-center">
+          <h1 class="uk-text-center">{{ SITENAME }}</h1>
+
           <h3>{{ SITESUBTITLE }}</h3>
+          <p>{{ SITEBLURB }}</p>
+          </div>
         </div>
       </div>
     </div>

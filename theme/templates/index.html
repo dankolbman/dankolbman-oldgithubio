@@ -2,6 +2,7 @@
 {% block content %}
 <section id="content" class="container">
 {% block content_title %}
+<header><h1 class="uk-text-center">Recent Articles</h2></header>
 {% endblock %}
 
 
@@ -10,23 +11,14 @@
   {% if article.image %}
   <div class="uk-contrast post-header" style="background: url({{ article.image }}) center;">
   {% else %}
-  <div class="uk-contrast post-no-header">
+  <div class="uk-contrast post-no-header"
+   {% if article.color %} style="background: #{{ article.color }}"{% endif %}>
   {% endif %}
-      <header><h2 class="uk-article-title uk-text-center uk-margin-bottom-remove"><a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title|striptags }}">{{ article.title }}</a></h2> 
-    <footer class="uk-article-meta uk-text-center">
-      <abbr class="published" title="{{ article.date.isoformat() }}"> {{ article.locale_date }} </abbr>
-    </footer><!-- /.post-info -->
-    </header>
+      <header>
+      <h2 class="uk-article-title uk-text-center uk-margin-bottom-remove"><a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title|striptags }}">{{ article.title }}</a></h2> 
+      </header>
   </div>
-
-  <article class="uk-article uk-width-large-1-2 uk-width-medium-4-5 uk-width-small-5-6 uk-container-center">
-    <div class="entry-content uk-margin-small-top"> {{ article.content }} </div><!-- /.entry-content -->
-  </article>
 {% endfor %}
 <!-- /#posts-list -->
-<hr class="uk-article-divider"></div>
-<div class="uk-width-1-6 uk-container-center">
-  {% include 'pagination.html' %}
-</div>
 </section><!-- /#content -->
 {% endblock content %}
