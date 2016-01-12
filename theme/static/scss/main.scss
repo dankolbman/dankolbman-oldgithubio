@@ -1,13 +1,20 @@
 @import "uikit-mixins.scss";
 @import "uikit.scss";
 
+h1, h2, h3 {
+  font-family: 'Lato', "Helvetica Neue", Helvetica, sans-serif;
+}
+
+header p {
+  font: 18px/20px 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
 #banner h1, #banner h3 {
   margin: 0;
 }
 
-#banner img {
-  max-width: 200px;
-  max-height: 200px;
+.uk-border-rounded {
+  border-radius: 25px;
 }
 
 a:hover, .uk-contrast a:hover:not([class]) {
@@ -33,12 +40,12 @@ a:hover, .uk-contrast a:hover:not([class]) {
   width: 100%;
 }
 
-h1, h2, h3 {
+.uk-navbar li a {
   font-family: 'Lato', "Helvetica Neue", Helvetica, sans-serif;
 }
 
-.uk-navbar li a {
-  font-family: 'Lato', "Helvetica Neue", Helvetica, sans-serif;
+#content header {
+  padding-top: 10px;
 }
 
 .header {
@@ -79,7 +86,7 @@ p {
   text-align: justify;
 }
 
-p img {
+p img, .output img {
   display: block;
   margin-bottom: 15px;
   @extend .uk-align-center
