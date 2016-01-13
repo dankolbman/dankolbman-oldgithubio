@@ -2,8 +2,8 @@
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
 
-AUTHOR = 'Dan Kolbman'
-SITENAME = 'Dan Kolbman'
+AUTHOR = 'Daniel Kolbman'
+SITENAME = 'Daniel Kolbman'
 SITESUBTITLE = ''
 SITEBLURB = '''Hey! I'm Dan Kolbman. I studied Physics at the Rochester Institute
             of Technology. While there, I created a
@@ -22,7 +22,7 @@ MD_EXTENSIONS = ['codehilite', 'extra']
 
 GITHUBURL = 'https://github.com/dankolbman'
 TWITTERURL = 'https://twitter.com/DanKolbman'
-TRACKERURL = 'http://dankolbman.com'
+TRACKERURL = 'http://dankolbman.xyz'
 
 PATH = 'content'
 THEME = 'theme'
@@ -36,6 +36,7 @@ ARTICLE_PATHS = ['posts']
 EXTRA_PATH_METADATA = {
     'extra/favicon.ico': {'path': 'favicon.ico'},
     'extra/README.md' : {'path': 'README.md'}
+    'extra/CNAME' : {'path': 'CNAME'}
 }
 
 ARTICLE_SAVE_AS = 'articles/{slug}/index.html'
