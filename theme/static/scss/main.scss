@@ -9,6 +9,14 @@ header p {
   font: 18px/20px 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
+#banner a {
+  color: #0CF;
+}
+
+#banner a:hover {
+  color: #FFF;
+}
+
 #banner h1, #banner h3 {
   margin: 0;
 }
