@@ -2,6 +2,7 @@ title: Meet Emily: The Average Tinder Girl
 slug: meet-emily
 author: Dan Kolbman
 date: 2015-1-8
+color: 72C4ED
 
 
 Here I go through some data I've collected from Tinder biographies. If you're 
