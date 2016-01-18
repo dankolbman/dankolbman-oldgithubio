@@ -5,13 +5,30 @@ from __future__ import unicode_literals
 AUTHOR = 'Daniel Kolbman'
 SITENAME = 'Daniel Kolbman'
 SITESUBTITLE = ''
-SITEBLURB = '''Hey! I'm Dan Kolbman. I studied Physics at the Rochester Institute
-            of Technology. During my undergrad, I created a
+SITEBLURB = '''<p>Hey! I'm Dan Kolbman. I studied Physics at the Rochester Institute
+            of Technology where I created a
             <a href="https://github.com/dankolbman/BCIM">dynamics simulation</a>
             using high performance computing to model
             <a href="/KolbmanCapII.pdf">cancer cell mechanics</a>.
+            </p>
 
+            <p>
+            In my free time, I like take a break from the all that serious science
+            and make silly web apps to help me find
+            <a href="https://github.com/foodsnag/foodsnag-web">free food</a>
+            or write bots to crawl through
+            <a href="https://github.com/dankolbman/CleverTind">dating apps</a>.
+            </p>
             
+            <p>
+            I'm an advocate of Open Source/Open Science and publish most of my work
+            <a href="https://github.com/dankolbman">freely</a>.
+            I gorge on tea and coffee, listen to techno religiously, and 
+            <a href="http://dankolbman.xyz">travel the world</a>.
+            </p>
+
+            <p>I'm currently looking for my next challenge, so if you're in 
+            need of an engineer or data scientist, give me a shout!</p>
             '''
 SITEURL = ''
 
