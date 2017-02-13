@@ -1,6 +1,0 @@
-venv/
-output/
-*.pyc
-*.map
-*.pid
-*.sass-*
